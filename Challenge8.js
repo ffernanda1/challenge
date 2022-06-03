@@ -2,16 +2,13 @@ function pola(str) {
 // //write your code here
         
     let p = str.split(" ");
-    let arrayKosong = []
     for (let i = 0; i < 10; i++) {
         for (let h = 0; h < 10; h++) {
-
             let awal = Number(p[0].replace("#", i));
             let akhir = Number(p[4].replace("#", h));
             let tengah = Number(p[2])
         
             if (awal * tengah == akhir) {
-                 arrayKosong.push(i, h)
                  return [i, h]
             } 
         }
