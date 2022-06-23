@@ -20,7 +20,7 @@ class Car {
 class Avanza extends Car {
     constructor(year) {
         super(new Tyre(17, 'Dunlop'), 8, 4, 'Avanza', year)
-        this.garansi = 5
+        this.garansi = 7
     }
 }
 
@@ -79,23 +79,23 @@ class CarFactory {
      
     }
 
-    garansi() {
+    garansi(year) {
 
         for (let i = 0; i < this.cars.length; i++) {
-            let c = this.cars[i].year + Math.floor(Math.random() * 10)
+            let c = year
 
             if (c > (this.cars[i].garansi + this.cars[i].year)) {
-                console.log(`mobil ${this.cars[i].model}\ndengan Nomor Engine ${this.cars[i].engine}`)
-                console.log(`garansi hangus di tahun ${c} dengan awal produksi ${this.cars[i].year}\n `)
+                console.log(`mobil ${this.cars[i].model}\ndengan Nomor Engine ${this.cars[i].engine} dan waktu garansi ${this.cars[i].garansi} tahun`)
+                console.log(`garansi hangus di tahun ${c} dengan awal produksi tahun ${this.cars[i].year}\n `)
             } else {
-                console.log(`mobil ${this.cars[i].model}\ndengan Nomor Engine ${this.cars[i].engine}`)
-                console.log(`garansi masih ada di tahun ${c} dengan awal produksi ${this.cars[i].year}\n`)
+                console.log(`mobil ${this.cars[i].model}\ndengan Nomor Engine ${this.cars[i].engine} dan waktu garansi ${this.cars[i].garansi} tahun`)
+                console.log(`garansi masih ada di tahun ${c} dengan awal produksi tahun ${this.cars[i].year}\n`)
             }
         }
     }
 }
 
 let factory = new CarFactory('SpaceX', 'Tesla');
-factory.produksi(2022)
-factory.garansi();
+factory.produksi(2022);
+factory.garansi(2027);
 
