@@ -1,0 +1,16 @@
+{
+  "name": "challenge18",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Challenge18.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cli-table": "^0.3.11",
+    "sqlite3": "^5.0.8"
+  }
+}
