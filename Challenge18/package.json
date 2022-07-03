@@ -2,7 +2,7 @@
   "name": "challenge18",
   "version": "1.0.0",
   "description": "",
-  "main": "Challenge18.js",
+  "main": "Challenge18Main.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
